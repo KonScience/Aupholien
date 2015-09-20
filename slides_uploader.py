@@ -164,6 +164,7 @@ def create_production(username, password, chapters, slide_images):
     data = {
         "preset": preset,
         "chapters": chapters_data,
+        "output_basename": splitext(basename(pdf_slides))[0]
     }
     response = post_request(url, data, username, password)
 
