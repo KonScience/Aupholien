@@ -1,27 +1,7 @@
-Auphonic API Examples
-=====================
+# Aupholien: Convert PDF slides to chapter images
 
+Thanks to @gholzmann for developing the [Auphonic API](http://auphonic.com/developers) example [slides_uploader.py](https://github.com/auphonic/auphonic-api-examples/blob/0f979ce99a035217fbc2dd1aa8ea01b3b25f04d1/python/slides_uploader.py)! This fork adapts that example specifically for the [KonScience Lectures workflow](http://www.konscience.de/uber-uns/#workflow-fur-vortragsaufzeichnungen).
 
-This repository contains some example scripts in various programming languages, which use the Auphonic API.
+# About [Auphonic](https://auphonic.com)
 
-More information about the Auphonic API can be found at http://auphonic.com/developers .
-
-
-Examples
---------
-
-Subfolders in the repository represent programming languages with various examples.
-For example: python, js, php, shell, ...
-
-Additional examples and pull requests are very welcome!
-
-For some common examples see also
-https://auphonic.com/api-docs/examples.html .
-
-
-About Auphonic
---------------
-
-Auphonic is an automatic audio post production webservice for podcasts, screencasts, radio shows, audio books and more.
-
-See http://auphonic.com .
+An automatic audio post production webservice for podcasts, screencasts, radio shows, audio books and more.
