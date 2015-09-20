@@ -44,6 +44,9 @@ import getpass
 # NOTE: you can also set an absolute path if necessary (windows)!
 CONVERT_CMD = "convert"
 
+# Auphonic login data
+username = "YOUR_USERNAME"
+
 # END of SETTINGS
 ###############################################################################
 
@@ -218,8 +221,6 @@ if __name__ == "__main__":
     chapter_file = sys.argv[1]
     pdf_slides = sys.argv[2]
 
-    print("\nPlease enter your Auphonic account information:")
-    username = raw_input('Auphonic Username: ')
     password = getpass.getpass("Auphonic Password: ")
 
     try:
