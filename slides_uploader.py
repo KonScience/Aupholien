@@ -46,6 +46,7 @@ CONVERT_CMD = "convert"
 
 # Auphonic login data
 username = "YOUR_USERNAME"
+preset = "UUID" # see https://auphonic.com/engine/presets/
 
 # END of SETTINGS
 ###############################################################################
@@ -161,7 +162,7 @@ def create_production(username, password, chapters, slide_images):
     # create the new production
     url = "https://auphonic.com/api/productions.json"
     data = {
-        "metadata": {"title": "CHANGEME: Slides Upload"},
+        "preset": preset,
         "chapters": chapters_data,
     }
     response = post_request(url, data, username, password)
