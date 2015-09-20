@@ -60,11 +60,12 @@ TEMP_DIR = None
 def convert_pdf_to_chapter_images(pdf_slides):
     """ Converts the pdf slides to individual jpeg chapter images.
     """
-    target_img = join(TEMP_DIR, splitext(basename(pdf_slides))[0] + "-%03d.jpg")
+    target_img = splitext(basename(pdf_slides))[0] + "-%03d.jpg"
+    target_path = join(TEMP_DIR, target_img)
 
     # create and run imagemagic command to convert pdf to jpeg
-    cmd = "%s -density 300 %s -quality 86 %s" % (
-        CONVERT_CMD, pdf_slides, target_img
+    cmd = "%s -density 300 %s -quality 86 -write %s %s" % (
+        CONVERT_CMD, pdf_slides, target_path, target_img
     )
     print("\nConverting pdf slides to images:")
     #print(cmd)
