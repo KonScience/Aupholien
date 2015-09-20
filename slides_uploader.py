@@ -33,6 +33,7 @@ import urllib2
 import json
 import base64
 import getpass
+import webbrowser
 
 
 # Please edit all variables within SETTINGS to match your setup!
@@ -180,6 +181,7 @@ def create_production(username, password, chapters, slide_images):
         print("\nPlease edit and start the production here:")
         print(edit_page)
         print("")
+        webbrowser.open_new_tab(edit_page)
 
     else:
         # there was a problem
